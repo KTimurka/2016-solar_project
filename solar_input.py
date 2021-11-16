@@ -53,7 +53,7 @@ def parse_star_parameters(line, star):
     for i in range(8):
         parameters.append(line.split()[i].lower())
     star.type = str(parameters[0])
-    star.r = int(parameters[1])
+    star.R = int(parameters[1])
     star.color = str(parameters[2])
     star.m = float(parameters[3])
     star.x = float(parameters[4])
@@ -81,7 +81,7 @@ def parse_planet_parameters(line, planet):
     for i in range(8):
         parameters.append(line.split()[i].lower())
     planet.type = str(parameters[0])
-    planet.r = int(parameters[1])
+    planet.R = int(parameters[1])
     planet.color =  str(parameters[2])
     planet.m =float(parameters[3])
     planet.x = float(parameters[4])
